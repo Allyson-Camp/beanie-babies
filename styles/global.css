@@ -1,7 +1,7 @@
 :root {
     --background: rgb(224, 234, 247);
     --header-background: rgba(255, 0, 0, 0.674);
-    --primary-font: 'Crafty Girls', cursive;   
+    --primary-font: 'Crafty Girls', cursive;
 }
 
 body {
@@ -40,7 +40,7 @@ h1 {
 }
 
 .dropdown {
-    width: 150px
+    width: 150px;
 }
 
 .submit-bttn {
