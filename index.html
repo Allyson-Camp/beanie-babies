@@ -8,13 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- title and favicon -->
-    <title>Web App</title>
+    <title>Beanie Baby Search</title>
     <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
     <!-- js -->
     <script type="module" src="app.js"></script>
 
     <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Risque&display=swap" rel="stylesheet">
     <!-- see https://fonts.google.com/ -->
 
     <!-- css -->
@@ -27,11 +30,22 @@
 <body>
     <header>
         <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
+        <h1>Beanie Baby Search</h1>
     </header>
-
     <main>
-
+        <h2>Search Beanie Babies by Astrological Sign</h2>
+        <section class="search">
+                <form class="selection-form">
+                    <label for="dropdown">Show me Beanie Babies who are:</label>
+                    <select class="dropdown"></select>
+                    <button class="submit-bttn">Search</button>
+                </form>
+            <!-- button and form -->
+            </section>
+        <section class="list">
+            <div class="baby-list"></div>
+            <!-- beanie babies will populate-->
+        </section>
     </main>
 
 </body>

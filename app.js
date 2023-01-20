@@ -1,10 +1,13 @@
 /* Imports */
 
 /* Get DOM Elements */
-
+    //form and button
 /* State */
 
 /* Events */
+
+// addEventListener on load 
+// addEventListener on Submit
 
 /* Display Functions */
 

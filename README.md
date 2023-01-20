@@ -18,10 +18,19 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 Additional considerations:
 
 -   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
+    - button and form 
+
 -   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
+         -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
+
     -   What are the key/value pairs?
+
     -   What arrays might you need?
+        - array of babies (names??) and array of signs
     -   What needs to live in a persistence layer?
+
 -   Is there some state we need to initialize?
+    beanie babies '' and astrosigns ''
+
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+    aquiring importing/exporting the data

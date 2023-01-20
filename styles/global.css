@@ -1,15 +1,16 @@
 :root {
     --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
-    --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
-        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
+    --header-background: rgba(255, 0, 0, 0.674);
+    --primary-font: 'Crafty Girls', cursive;   
 }
 
 body {
     font-family: var(--primary-font);
-    background: var(--background);
+    background: url(../assets/ty-img.png);
     display: grid;
     grid-template-rows: auto 1fr;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 header {
@@ -32,4 +33,20 @@ header .logo {
 
 main {
     padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+.dropdown {
+    width: 150px
+}
+
+.submit-bttn {
+    height: 18px;
+    width: 55px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 17px;
 }
