@@ -17,6 +17,7 @@ window.addEventListener('load', async () => {
     const response = await getBabies();
     babies = response;
     console.log(babies);
+    displayBabies();
 });
 
 // addEventListener on Submit
@@ -30,10 +31,10 @@ selectionForm.addEventListener('submit', async (e) => {
 
 /* Display Functions */
 function displayBabies() {
-
-
     babyList.textContent = '';
-    babyList.append(renderBabies(babies));
+    for (let baby of babies) {
+        babyList.append(renderBabies(baby));
+    }
 }
 
 function displayAstroSigns() {
