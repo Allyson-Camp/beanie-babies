@@ -1,6 +1,6 @@
 :root {
     --background: rgb(224, 234, 247);
-    --header-background: rgba(255, 0, 0, 0.674);
+    --header-background: rgba(208, 0, 0, 0.674);
     --primary-font: 'Crafty Girls', cursive;
 }
 
@@ -18,7 +18,6 @@ header {
     top: 0;
     padding: 15px;
     height: 80px;
-
     display: flex;
     align-items: center;
     gap: 10px;
@@ -39,6 +38,8 @@ h1 {
     color: white;
 }
 
+
+
 .dropdown {
     width: 150px;
 }
@@ -51,6 +52,33 @@ h1 {
     padding-bottom: 17px;
 }
 
-baby.image {
-    width: 200px
+.baby-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: rgb(208, 0, 0);
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+img {
+    width: 350px;
+    height: 375px
+}
+
+p {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+form {
+    margin: 20px;
 }

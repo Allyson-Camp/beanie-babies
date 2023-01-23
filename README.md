@@ -1,3 +1,6 @@
+![wireframe for beanie-babies](./assets/beanie-baby-wireframe.png)
+
+
 ## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
