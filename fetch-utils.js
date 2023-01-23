@@ -6,6 +6,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 
 export async function getBabies(selectedSign) {
+   //if we want to filter the bbs need to put in an argument, this is the user selecting
     if (selectedSign){
         //need to await client (supabase) bc it is an async
         let { data, error } = await client
@@ -16,7 +17,7 @@ export async function getBabies(selectedSign) {
         
         return data;
     }
-
+//if no selection displaying all 100
     let { data, error } = await client
         .from('beanie_babies')
         .select('*')

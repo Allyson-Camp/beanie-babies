@@ -4,7 +4,7 @@ import { renderBabies, renderAstroSigns } from './render-utils.js';
 
 /* Get DOM Elements */
 const babyList = document.querySelector('.baby-list');
-const selectionForm = document.querySelector('.selection-form');
+const formEl = document.querySelector('form');
 const dropdown = document.querySelector('.dropdown');
 const selectEl = document.querySelector('select');
     
@@ -19,6 +19,7 @@ window.addEventListener('load', async () => {
     const response = await getBabies();
     babies = response;
 
+    //calling the display function thats below 
     displayBabies();
 
     const signs = await getSigns();
@@ -33,14 +34,14 @@ window.addEventListener('load', async () => {
     }
 });
 
-// addEventListener on Submit
-// selectionForm.addEventListener('submit', async (e) => {
-//     e.preventDefault();
-//     const formData = new FormData(selectionForm);
-//     const value = formData.get('astro-signs');
-//     displayBabies();
-// });
+formEl.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const filteredList = await getBabies(selectEl.value);
 
+    babies = filteredList;
+
+    displayBabies();
+});
 
 /* Display Functions */
 function displayBabies() {
