@@ -7,7 +7,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function getBabies(selectedSign) {
     if (selectedSign){
-   
+        //need to await client (supabase) bc it is an async
         let { data, error } = await client
             .from('beanie_babies')
             .select('*')
