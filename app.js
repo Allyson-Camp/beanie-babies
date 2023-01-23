@@ -23,6 +23,7 @@ window.addEventListener('load', async () => {
 
     const signs = await getSigns();
 
+    //looping the signs and appended the new option el to the dom
     for (let sign of signs) {
         const optionEl = document.createElement('option');
         optionEl.value = sign.name;
